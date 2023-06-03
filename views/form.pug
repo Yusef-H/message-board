@@ -1,8 +1,11 @@
-form(action="/new" method="POST")
-    label(for="author-name") Name:
-    input(type="text" name="authorName" id="author-name")
-    br
-    label(for="message") Message:
-    input(type="text" name="message" id="message")
-    br
-    button(type="submit") Submit
+head
+    link(rel='stylesheet', href='/stylesheets/form.css')
+body
+    form(action="/new" method="POST" id="msg-form")
+        label(for="author-name") Name:
+        input(type="text" name="authorName" id="author-name")
+        br
+        label(for="message") Message:
+        input(type="text" name="message" id="message")
+        br
+        button(type="submit") Submit

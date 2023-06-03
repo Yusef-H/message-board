@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+#msg-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: clamp(200px, 40vmin, 1000px);
+    height: clamp(200px, 40vmin, 1000px);
+    padding: 50px;
+    border: 2px solid gray;
+    border-radius: 8px;
+}
+  
+button{
+    width: 100px;
+    padding: 5px;
+    align-self: center;
+}
