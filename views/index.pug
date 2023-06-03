@@ -2,9 +2,15 @@ extends layout
 
 block content
   h1= title
+  a(href="/new") Add New Message
   ul
     each message in messages
       li
-        span.message-text= message.text
-        span.message-user= message.user
-        span.message-added= message.added
+        | User: #{message.user}
+        br
+        each line in message.text.split('\n')
+          p= line
+        br
+        | Date: #{message.added}
+
+
